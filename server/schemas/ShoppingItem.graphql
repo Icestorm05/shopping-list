@@ -1,0 +1,17 @@
+type Query {
+    shoppingItems: [ShoppingItem]
+}
+type Mutation {
+    createShoppingItem(shoppingItem: ShoppingInput): ShoppingItem
+    removeShoppingItem(id: ID): ShoppingItem
+    updateShoppingItem(id: ID, shoppingItem: ShoppingInput): ShoppingItem
+}
+input ShoppingInput {
+    icon: String
+    name: String
+}
+type ShoppingItem {
+    _id: ID
+    icon: String
+    name: String
+}

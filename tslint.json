@@ -1,0 +1,12 @@
+{
+    "extends": "tslint:recommended",
+    "linterOptions": {
+        "exclude": [
+            "**/*.json"
+        ]
+    },
+    "rules": {
+        "no-unused-expression": [true, "allow-new"],
+        "no-var-requires": false
+    }
+}

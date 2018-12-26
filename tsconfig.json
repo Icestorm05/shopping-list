@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+        "allowSyntheticDefaultImports": true,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "baseUrl": "./src",
+        "paths": {
+            "~/*": ["./*"]
+        },
+        "jsx": "react",
+        "module": "esnext",
+        "moduleResolution": "node",
+        "sourceMap": true,
+        "strict": true,
+        "target": "es5",
+        "lib": ["es2015", "dom", "es2017.object", "esnext.asynciterable"],
+        "noImplicitAny": false,
+        "resolveJsonModule": true,
+        "esModuleInterop": true,
+    },
+    "exclude": [
+        "node_modules"
+    ]
+}

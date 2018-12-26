@@ -1,0 +1,21 @@
+type Query {
+    shoppingCartItems: [ShoppingCartItem]
+}
+type Mutation {
+    createShoppingCartItem(shoppingCartItem: ShoppingCartInput): ShoppingCartItem
+    removeShoppingCartItem(id: ID): ShoppingCartItem
+    updateShoppingCartItem(id: ID, shoppingCartItem: ShoppingCartInput): ShoppingCartItem
+}
+input ShoppingCartInput {
+    icon: String
+    name: String
+    description: String
+    quantity: Int
+}
+type ShoppingCartItem {
+    _id: ID
+    icon: String
+    name: String
+    description: String
+    quantity: Int
+}
